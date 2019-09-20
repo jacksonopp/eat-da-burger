@@ -1,5 +1,22 @@
-{{#each item}}
-    <p>{{id}}</p>
-    <p>{{burger}}</p>
-    <p>{{is_eaten}}</p>
-{{/each}}
+
+<div class="row">
+    <div class="col-6 text-center">
+        {{#each itemNotEaten}}
+            <p>{{id}}</p>
+            <p>{{burger}}</p>
+            <p>{{is_eaten}}</p>
+        {{/each}}
+    </div>
+    <div class="col-6 text-center">
+        {{#each itemEaten}}
+            <p>{{id}}</p>
+            <p>{{burger}}</p>
+            <p>{{is_eaten}}</p>
+        {{/each}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <p>stuff here</p>
+    </div>
+</div>

@@ -28,7 +28,13 @@ app.get("/", (req, res) => {
         if (err) {
             return res.send(500);
         } else {
-            res.render("index", { item: data });
+            console.log(data);
+            const burgerNotEaten = data.filter(type => type.is_eaten === 0)
+            const burgerIsEaten = data.filter(type => type.is_eaten !== 0)
+            res.render("index", {
+                itemNotEaten: burgerNotEaten,
+                itemEaten: burgerIsEaten
+            });
         }
     })
 })
