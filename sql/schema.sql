@@ -11,9 +11,9 @@ create table burgers (
 );
 
 insert into burgers (burger)
-values ("the big lebowski");
+values ("the pig lebowski");
 
 insert into burgers (burger)
-values ("stuff");
+values ("cheemsborger");
 
 select * from burgers;
